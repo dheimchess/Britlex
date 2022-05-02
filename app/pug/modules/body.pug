@@ -1,0 +1,94 @@
+main#main
+    section.home 
+        .container-second 
+            article.home__article
+                .home__titleimage
+                    p.home__title Learn Any Foreign Language
+                    img.home__imagesecond(src="img/light-bulb-svgrepo-com1.svg")
+                p.home__subtitle With our teachers who write a program for each student, you will be able to make your first sketch after the first lesson.
+                a.home__botton(href="#skills") Get started
+            img.home__imagefirst(src="img/Learning languages-bro1.svg")
+
+    section.skills#skills
+        .container-third
+            p.skills__title Skills
+            .skills__skills 
+                .skills__speaking
+                    img.speakinng-img(src='img/Shared goals-bro1.svg')
+                    .speaking-block
+                        p.block__title.first Speaking
+                        p.block__subtitle.first Improve your English skills and confidence. Live classes and interactive lessons online. 20% extra free for a limited time only <br><br>Learn English online and improve your skills through our high-quality courses and resources – all designed for adult language learners.
+                        a.block__button.first(href='#') Learn more
+                .skills__writing
+                    img.writing-img(src='img/Typewriter-bro1.svg')
+                    .writing-block
+                        p.block__title.second Writing
+                        p.block__subtitle.second One of the most important and extensive areas of natural science, the science that studies substances, also their composition 
+                        a.block__button.second(href='#') Learn more
+                .skills__reading
+                    img.reading-img(src='img/House bookshelves-bro1.svg')
+                    .reading-block
+                        p.block__title.third Reading
+                        p.block__subtitle.third perception and response actions of the user resulting from the use and/or upcoming use of the product, system or service
+                        a.block__button.second(href='#') Learn more
+                .skills__listening
+                    img.listening-img(src='img/Podcast audience-bro1.svg')
+                    .listening-block
+                        p.block__title.fourth Listening
+                        p.block__subtitle.fourth Here you can find activities to practise your listening skills. Listening will help you to improve your understanding 
+                        a.block__button.second(href='#') Learn more
+
+    section.about#about 
+        .container-fourth
+            article.about__information 
+                p.about__title.first About Us
+                p.about__subtitle The model offers a framework for discussing problems related to the user's experience, as well as possible ways and means of solving them. Application development begins at the top level (strategy), where the future software product is described quite abstractly from the point of view of the expectations of both users and the customer.
+                .about__counter 
+                    .counter-first 
+                        p.counter-count 800
+                        p.counter-subcount Pupils
+                    .counter-second 
+                        p.counter-count 18
+                        p.counter-subcount Teachers
+                    .counter-third 
+                        p.counter-count 6
+                        p.counter-subcount Foreign languages
+            img.about__img(src='img/Business competition-bro1.svg')
+            p.about__title.second About Us
+
+    section.pricing#pricing
+        .container-fifth 
+            p.pricing__title Pricing
+            section.pricing__tarifs 
+                .tarifs-tafir 
+                    img.tarifs-img.first(src='img/Online test-bro1.svg')
+                    p.tarifs-title.first Self-study online course
+                    p.tarifs-subtitle.first Start learning English online in live classes with qualified EC teachers and students from all over the world.
+                    .tarifs-price 
+                        p.tarifs-numbers £5.99
+                        p.tarifs-month  per month
+                .tarifs-tafir 
+                    img.tarifs-img.second(src='img/Lesson-bro1.svg')
+                    p.tarifs-title.second Live online classes
+                    p.tarifs-subtitle.second Interactive group classes with expert teachers. Free 7-day trial
+                    .tarifs-price 
+                        p.tarifs-numbers £12.99
+                        p.tarifs-month  per month
+                .tarifs-tafir 
+                    img.tarifs-img.third(src='img/Webinar-bro2.svg')
+                    p.tarifs-title.third Personal Tuition
+                    p.tarifs-subtitle.third Online one-to-one English tutoring – enjoy our first session for only $1
+                    .tarifs-price 
+                        p.tarifs-numbers £20.99
+                        p.tarifs-month  per month
+    
+    section.contact#contact 
+        .container-sixth
+            p.contact__title Contact Us
+            img.contact__img(src='img/Ресурс11.svg')
+            section.contact__main 
+                p.main-title Contact Us 
+                p.main-subtitle Discover your current English level by taking our free online English test.Sign up to our newsletter for learning tips and free resources
+                form.form(action="#", method="get")
+                    input.main-input(type="email", name="usermail", placeholder="Enter Your E-mail")
+                    button.main-button(type="submit", name="submit-button") Subscribe

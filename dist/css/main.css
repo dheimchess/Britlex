@@ -1,0 +1,2469 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: sans-serif;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-style: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*================================================================*/
+html {
+  scroll-behavior: smooth;
+}
+
+body.scroll {
+  overflow: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 120px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease 0s;
+  background-color: #fff;
+}
+header .container-first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1338px;
+  min-height: 120px;
+  margin: 0 auto;
+}
+header .header__logo {
+  width: 106px;
+  height: 54px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 54px;
+  color: #000000;
+  z-index: 11;
+}
+header .header__logo span:nth-of-type(2) {
+  color: #939393;
+}
+header .header__burger {
+  display: none;
+}
+header .header__menu-dark {
+  width: 518px;
+  height: 30px;
+  transition: all 0.3s ease 0s;
+}
+header .header__menu-dark .header__menu {
+  width: 518px;
+  height: 30px;
+}
+header .header__menu-dark .header__menu .header__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 518px;
+  height: 30px;
+}
+header .header__menu-dark .header__menu .header__list li .header__menu-link {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #263238;
+  transition: all 0.3s ease 0s;
+}
+header .header__menu-dark .header__menu .header__list li .header__menu-link:hover {
+  color: #26323885;
+}
+header .header__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 220px;
+  width: 100%;
+  height: 70px;
+  border: 2px solid #263238;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  transition: all 0.3s ease 0s;
+}
+header .header__button:hover {
+  background-color: #263238;
+  color: #fff;
+}
+header .header__button-second {
+  display: none;
+}
+header .cross__block {
+  display: none;
+}
+header .header__cross {
+  display: none;
+}
+header .header-line {
+  display: none;
+}
+header.header_hidden {
+  transform: translateY(-100%);
+}
+
+main {
+  min-height: 2840px;
+}
+
+.home {
+  margin-top: 120px;
+  min-height: 705px;
+}
+.home .container-second {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1338px;
+  min-height: 705px;
+  margin: 0 auto;
+}
+.home .home__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 544px;
+  width: 100%;
+  min-height: 567px;
+  height: 100%;
+}
+.home .home__article .home__titleimage {
+  display: flex;
+}
+.home .home__article .home__titleimage .home__title {
+  width: 386px;
+  height: 240px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px;
+  color: #000000;
+}
+.home .home__article .home__titleimage .home__imagesecond {
+  margin-left: 38px;
+}
+.home .home__article .home__subtitle {
+  max-width: 632px;
+  width: 100%;
+  min-height: 108px;
+  height: 100%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #8F95A5;
+}
+.home .home__article .home__botton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 438px;
+  min-height: 118px;
+  background: #263238;
+  border-radius: 15px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 54px;
+  color: #FFFFFF;
+  transition: all 0.3s ease 0s;
+}
+.home .home__article .home__botton:hover {
+  background: #ffffff;
+  color: #263238;
+  border: 2px solid #263238;
+}
+
+.skills {
+  min-height: 1200px;
+}
+.skills .container-third {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1338px;
+  min-height: 1200px;
+  margin: 0 auto;
+}
+.skills .skills__title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #000000;
+}
+.skills .skills__skills {
+  display: grid;
+  grid-template-columns: repeat(1fr, 3);
+  grid-template-rows: 531px 343px;
+  grid-gap: 18px;
+  width: 100%;
+  min-height: 894px;
+  height: 100%;
+}
+.skills .skills__skills .speakinng-img {
+  width: 390px;
+  height: 390px;
+}
+.skills .skills__skills .writing-img {
+  width: 293px;
+  height: 293px;
+  margin-top: -30px;
+}
+.skills .skills__skills .reading-img {
+  width: 371px;
+  height: 247px;
+}
+.skills .skills__skills .listening-img {
+  width: 382px;
+  height: 255px;
+}
+.skills .skills__skills .skills__speaking {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: #F5F5F5;
+  border-radius: 10px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  padding-top: 35px;
+  padding-bottom: 92px;
+}
+.skills .skills__skills .skills__writing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  background: #F5F5F5;
+  border-radius: 10px;
+  padding-bottom: 44px;
+}
+.skills .skills__skills .skills__reading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #F5F5F5;
+  border-radius: 10px;
+  padding-bottom: 25px;
+}
+.skills .skills__skills .skills__listening {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  background: #F5F5F5;
+  border-radius: 10px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.skills .skills__skills .speaking-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 345px;
+  width: 100%;
+  min-height: 346px;
+  height: 100%;
+  margin: 0 auto;
+}
+.skills .skills__skills .writing-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 342px;
+  width: 100%;
+  min-height: 209px;
+  height: 100%;
+  margin: 0 auto;
+}
+.skills .skills__skills .reading-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 354px;
+  width: 100%;
+  min-height: 206px;
+  height: 100%;
+  margin: 0 auto;
+}
+.skills .skills__skills .block__title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 80px;
+  color: #263238;
+}
+.skills .skills__skills .block__subtitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8F95A5;
+}
+.skills .skills__skills .block__subtitle.first {
+  max-width: 347px;
+  width: 100%;
+  min-height: 192px;
+  height: 100%;
+}
+.skills .skills__skills .block__subtitle.second {
+  max-width: 342px;
+  width: 100%;
+  min-height: 72px;
+  height: 100%;
+  margin-bottom: 33px;
+}
+.skills .skills__skills .block__subtitle.third {
+  max-width: 354px;
+  width: 100%;
+  min-height: 72px;
+}
+.skills .skills__skills .block__subtitle.fourth {
+  max-width: 328px;
+  width: 100%;
+  min-height: 72px;
+  height: 100%;
+  padding-bottom: 25px;
+}
+.skills .skills__skills .block__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 218px;
+  min-height: 60px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  background: #263238;
+  border-radius: 5px;
+  transition: all 0.3s ease 0s;
+}
+.skills .skills__skills .block__button.first {
+  width: 230px;
+  min-height: 60px;
+  font-size: 18px;
+  line-height: 27px;
+}
+.skills .skills__skills .block__button:hover {
+  color: #003453;
+  background: #8d8d8d;
+}
+
+.about {
+  min-height: 824px;
+}
+.about .container-fourth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1338px;
+  min-height: 824px;
+  margin: 0 auto;
+}
+.about .about__information {
+  max-width: 635px;
+  width: 100%;
+  min-height: 429px;
+  height: 100%;
+}
+.about .about__information .about__title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #000000;
+  margin-bottom: 23px;
+}
+.about .about__information .about__subtitle {
+  max-width: 635px;
+  width: 100%;
+  min-height: 181px;
+  width: 100%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #8F95A5;
+  margin-bottom: 38px;
+}
+.about .about__information .about__counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 611px;
+  width: 100%;
+  min-height: 108px;
+  height: 100%;
+}
+.about .about__information .about__counter .counter-first {
+  max-width: 93px;
+  width: 100%;
+  min-height: 108px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .about__information .about__counter .counter-second {
+  max-width: 92px;
+  width: 100%;
+  min-height: 108px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .about__information .about__counter .counter-third {
+  max-width: 187px;
+  width: 100%;
+  min-height: 108px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .about__information .about__counter .counter-count {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #2A3246;
+}
+.about .about__information .about__counter .counter-subcount {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #8F95A5;
+}
+.about .about__title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #000000;
+}
+.about .about__title.second {
+  display: none;
+}
+
+.pricing {
+  min-height: 750px;
+}
+.pricing .container-fifth {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1338px;
+  min-height: 750px;
+  margin: 0 auto;
+}
+.pricing .pricing__title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #000000;
+}
+.pricing .pricing__tarifs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1338px;
+  width: 100%;
+}
+.pricing .pricing__tarifs .tarifs-tafir {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pricing .pricing__tarifs .tarifs-tafir .tarifs-img {
+  align-self: center;
+}
+.pricing .pricing__tarifs .tarifs-tafir .tarifs-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 48px;
+  color: #263238;
+}
+.pricing .pricing__tarifs .tarifs-tafir .tarifs-title.first {
+  margin-top: 40px;
+  margin-bottom: 19px;
+}
+.pricing .pricing__tarifs .tarifs-tafir .tarifs-title.second {
+  margin-top: 70px;
+  margin-bottom: 23px;
+}
+.pricing .pricing__tarifs .tarifs-tafir .tarifs-title.third {
+  margin-top: 11px;
+  margin-bottom: 20px;
+}
+.pricing .pricing__tarifs .tarifs-tafir .tarifs-subtitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #8F95A5;
+}
+.pricing .pricing__tarifs .tarifs-tafir .tarifs-subtitle.first {
+  max-width: 425px;
+  width: 100%;
+  min-height: 90px;
+  height: 100%;
+  margin-bottom: 29px;
+}
+.pricing .pricing__tarifs .tarifs-tafir .tarifs-subtitle.second {
+  max-width: 370px;
+  width: 100%;
+  min-height: 60px;
+  height: 100%;
+  margin-bottom: 59px;
+}
+.pricing .pricing__tarifs .tarifs-tafir .tarifs-subtitle.third {
+  max-width: 427px;
+  width: 100%;
+  min-height: 60px;
+  height: 100%;
+  margin-bottom: 59px;
+}
+.pricing .pricing__tarifs .tarifs-tafir .tarifs-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 240px;
+  width: 100%;
+  min-height: 45px;
+  height: 100%;
+  background: #EEEEEE;
+  border-radius: 5px;
+  padding-left: 18px;
+  padding-right: 24px;
+}
+.pricing .pricing__tarifs .tarifs-tafir .tarifs-price .tarifs-numbers {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  color: #263238;
+}
+.pricing .pricing__tarifs .tarifs-tafir .tarifs-price .tarifs-month {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #546269;
+}
+
+.contact {
+  min-height: 743px;
+}
+.contact .container-sixth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 743px;
+  max-width: 1338px;
+  margin: 0 auto;
+}
+.contact .contact__title {
+  display: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 80px;
+  color: #000000;
+}
+.contact .contact__main {
+  max-width: 756px;
+  width: 100%;
+  min-height: 309px;
+  height: 100%;
+}
+.contact .contact__main .main-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #000000;
+  margin-bottom: 37px;
+}
+.contact .contact__main .main-subtitle {
+  max-width: 776px;
+  width: 100%;
+  min-height: 60px;
+  height: 100%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #8F95A5;
+  margin-bottom: 52px;
+}
+.contact .contact__main .form {
+  display: flex;
+  max-width: 726px;
+  width: 100%;
+  min-height: 82px;
+  height: 100%;
+}
+.contact .contact__main .form .main-input {
+  max-width: 450px;
+  width: 100%;
+  min-height: 80px;
+  height: 100%;
+  border: 1px solid #8F95A5;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding-left: 33px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8F95A5;
+  margin-right: 12px;
+}
+.contact .contact__main .form .main-button {
+  max-width: 264px;
+  width: 100%;
+  min-height: 80px;
+  height: 100%;
+  background: #263238;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  transition: all 0.3s ease 0s;
+}
+.contact .contact__main .form .main-button:hover {
+  background: #ffffff;
+  color: #263238;
+  border: 2px solid #263238;
+}
+
+::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8F95A5;
+}
+
+.footer {
+  min-height: 149px;
+}
+.footer .container-seventh {
+  display: flex;
+  justify-content: space-between;
+  min-height: 149px;
+  max-width: 1338px;
+  margin: 0 auto;
+  border-top: 1px solid #C4C4C4;
+}
+.footer .footer__logo {
+  width: 106px;
+  height: 54px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 54px;
+  color: #000000;
+  margin-top: 31px;
+  z-index: 11;
+}
+.footer .footer__logo span:nth-of-type(2) {
+  color: #939393;
+}
+.footer .footer__links {
+  max-width: 632px;
+  width: 100%;
+  min-height: 36px;
+  height: 100%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #8F95A5;
+  margin-top: 55px;
+}
+.footer .footer__links span:nth-of-type(1) {
+  cursor: not-allowed;
+  transition: all 0.3s ease 0s;
+}
+.footer .footer__links span:nth-of-type(1):hover {
+  color: #50535d;
+}
+.footer .footer__links span:nth-of-type(3) {
+  cursor: not-allowed;
+  transition: all 0.3s ease 0s;
+}
+.footer .footer__links span:nth-of-type(3):hover {
+  color: #50535d;
+}
+.footer .footer__links span:nth-of-type(5) {
+  cursor: not-allowed;
+  transition: all 0.3s ease 0s;
+}
+.footer .footer__links span:nth-of-type(5):hover {
+  color: #50535d;
+}
+
+/*================================================================*/
+@media screen and (max-width: 1210px) {
+  .home .container-second {
+    margin: 0 20px;
+  }
+  .home .home__article {
+    max-width: 425px;
+    min-height: 422px;
+  }
+  .home .home__article .home__titleimage .home__title {
+    width: 290px;
+    height: 192px;
+    font-size: 48px;
+    line-height: 64px;
+  }
+  .home .home__article .home__titleimage .home__imagesecond {
+    margin-left: 12px;
+  }
+  .home .home__article .home__subtitle {
+    max-width: 417px;
+    min-height: 90px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .home .home__article .home__botton {
+    max-width: 292px;
+    min-height: 80px;
+    border-radius: 5px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .home .home__imagefirst {
+    width: 460px;
+    height: 460px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .skills {
+    min-height: 866px;
+  }
+  .skills .container-third {
+    min-height: 866px;
+    margin: 0 20px;
+  }
+  .skills .skills__title {
+    font-size: 36px;
+    line-height: 80px;
+    color: #000000;
+  }
+  .skills .skills__skills {
+    grid-template-rows: 441px 241px;
+    grid-gap: 13px;
+    min-height: 696px;
+  }
+  .skills .skills__skills .speakinng-img {
+    width: 260px;
+    height: 260px;
+  }
+  .skills .skills__skills .writing-img {
+    width: 205px;
+    height: 205px;
+    margin-top: 0px;
+  }
+  .skills .skills__skills .reading-img {
+    width: 243px;
+    height: 162px;
+  }
+  .skills .skills__skills .listening-img {
+    width: 254px;
+    height: 169px;
+  }
+  .skills .skills__skills .skills__speaking {
+    padding-top: 0px;
+    padding-bottom: 52px;
+  }
+  .skills .skills__skills .skills__writing {
+    padding-bottom: 30px;
+  }
+  .skills .skills__skills .skills__reading {
+    padding-bottom: 32px;
+  }
+  .skills .skills__skills .skills__listening {
+    padding-bottom: 34px;
+    padding-top: 0px;
+  }
+  .skills .skills__skills .speaking-block {
+    max-width: 253px;
+    min-height: 359px;
+  }
+  .skills .skills__skills .writing-block {
+    max-width: 248px;
+    min-height: 201px;
+  }
+  .skills .skills__skills .reading-block {
+    max-width: 232px;
+    min-height: 199px;
+  }
+  .skills .skills__skills .listening-block {
+    max-width: 291px;
+    width: 100%;
+    min-width: 174px;
+    height: 100%;
+  }
+  .skills .skills__skills .block__title {
+    font-size: 22px;
+  }
+  .skills .skills__skills .block__title.second {
+    margin-top: -50px;
+  }
+  .skills .skills__skills .block__subtitle {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .skills .skills__skills .block__subtitle.first {
+    max-width: 254px;
+    min-height: 229px;
+  }
+  .skills .skills__skills .block__subtitle.second {
+    max-width: 244px;
+    min-height: 80px;
+    margin-bottom: 10px;
+  }
+  .skills .skills__skills .block__subtitle.third {
+    max-width: 232px;
+    min-height: 77px;
+    margin-top: -30px;
+  }
+  .skills .skills__skills .block__subtitle.fourth {
+    max-width: 289px;
+    height: 62px;
+    padding-bottom: 18px;
+  }
+  .skills .skills__skills .block__button {
+    width: 196px;
+    min-height: 57px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .skills .skills__skills .block__button.first {
+    width: 196px;
+    min-height: 57px;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .container-first {
+    margin: 0 31px;
+  }
+  header .header__logo {
+    width: 89px;
+    height: 45px;
+    font-size: 30px;
+    line-height: 45px;
+  }
+  header .header__menu-dark {
+    width: 414px;
+    height: 24px;
+  }
+  header .header__menu-dark .header__menu {
+    width: 414px;
+    height: 24px;
+  }
+  header .header__menu-dark .header__menu .header__list {
+    width: 414px;
+    height: 24px;
+  }
+  header .header__menu-dark .header__menu .header__list li .header__menu-link {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  header .header__button {
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .about {
+    min-height: 550px;
+  }
+  .about .container-fourth {
+    min-height: 550px;
+    margin: 0 20px;
+  }
+  .about .about__information {
+    max-width: 525px;
+    min-height: 341px;
+  }
+  .about .about__information .about__title {
+    font-size: 36px;
+    line-height: 80px;
+    margin-bottom: 13px;
+  }
+  .about .about__information .about__subtitle {
+    max-width: 525px;
+    min-height: 151px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 9px;
+  }
+  .about .about__information .about__counter {
+    max-width: 405px;
+    min-height: 92px;
+  }
+  .about .about__information .about__counter .counter-first {
+    max-width: 66px;
+    min-height: 92px;
+  }
+  .about .about__information .about__counter .counter-second {
+    max-width: 74px;
+    min-height: 92px;
+  }
+  .about .about__information .about__counter .counter-third {
+    max-width: 150px;
+    min-height: 92px;
+  }
+  .about .about__information .about__counter .counter-count {
+    font-size: 30px;
+  }
+  .about .about__information .about__counter .counter-subcount {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .about .about__img {
+    max-width: 336px;
+    width: 100%;
+    min-height: 336px;
+    height: 100%;
+  }
+  .about .about__title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    color: #000000;
+  }
+
+  .pricing {
+    min-height: 600px;
+  }
+  .pricing .container-fifth {
+    min-height: 600px;
+    margin: 0 20px;
+  }
+  .pricing .pricing__title {
+    font-size: 36px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-img.first {
+    max-width: 222px;
+    width: 100%;
+    min-height: 222px;
+    height: 100%;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-img.second {
+    max-width: 267px;
+    width: 100%;
+    min-height: 195px;
+    height: 100%;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-img.third {
+    max-width: 242px;
+    width: 100%;
+    min-height: 242px;
+    height: 100%;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-title {
+    font-size: 22px;
+    line-height: 34px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-title.first {
+    margin-top: 20px;
+    margin-bottom: 14px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-title.second {
+    margin-top: 15px;
+    margin-bottom: 9px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-title.third {
+    margin-top: 5px;
+    margin-bottom: 1px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-subtitle {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8F95A5;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-subtitle.first {
+    max-width: 425px;
+    width: 100%;
+    min-height: 90px;
+    height: 100%;
+    margin-bottom: 31px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-subtitle.second {
+    max-width: 370px;
+    width: 100%;
+    min-height: 60px;
+    height: 100%;
+    margin-bottom: 52px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-subtitle.third {
+    max-width: 427px;
+    width: 100%;
+    min-height: 60px;
+    height: 100%;
+    margin-bottom: 34px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-price {
+    max-width: 240px;
+    min-height: 45px;
+    border-radius: 5px;
+    padding-left: 12px;
+    padding-right: 23px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-price .tarifs-numbers {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-price .tarifs-month {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .contact {
+    min-height: 550px;
+  }
+  .contact .container-sixth {
+    min-height: 550px;
+    max-width: 1338px;
+    margin: 0 20px;
+  }
+  .contact .contact__img {
+    max-width: 312px;
+    width: 100%;
+    min-height: 281px;
+    height: 100%;
+  }
+  .contact .contact__main {
+    max-width: 530px;
+    min-height: 249px;
+  }
+  .contact .contact__main .main-title {
+    font-size: 36px;
+    line-height: 80px;
+    margin-left: 14px;
+    margin-bottom: 3px;
+  }
+  .contact .contact__main .main-subtitle {
+    max-width: 442px;
+    min-height: 72px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 34px;
+  }
+  .contact .contact__main .form {
+    max-width: 530px;
+    min-height: 60px;
+  }
+  .contact .contact__main .form .main-input {
+    max-width: 323px;
+    min-height: 60px;
+    padding-left: 38px;
+    font-size: 14px;
+    line-height: 21px;
+    margin-right: 14px;
+  }
+  .contact .contact__main .form .main-button {
+    max-width: 193px;
+    min-height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  ::placeholder {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .footer {
+    min-height: 91px;
+  }
+  .footer .container-seventh {
+    min-height: 91px;
+    margin: 0 20px;
+  }
+  .footer .footer__logo {
+    width: 89px;
+    height: 45px;
+    font-size: 30px;
+    line-height: 45px;
+    margin-top: 22px;
+  }
+  .footer .footer__links {
+    max-width: 381px;
+    min-height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 37px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .home {
+    min-height: 464px;
+  }
+  .home .container-second {
+    min-height: 464px;
+  }
+  .home .home__article {
+    max-width: 337px;
+    min-height: 329px;
+  }
+  .home .home__article .home__titleimage {
+    align-items: flex-end;
+  }
+  .home .home__article .home__titleimage .home__title {
+    width: 217px;
+    height: 135px;
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .home .home__article .home__titleimage .home__imagesecond {
+    margin-left: 0px;
+    width: 75px;
+    height: 75px;
+  }
+  .home .home__article .home__subtitle {
+    max-width: 333px;
+    min-height: 72px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .home .home__article .home__botton {
+    max-width: 236px;
+    min-height: 65px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .home .home__imagefirst {
+    width: 352px;
+    height: 352px;
+  }
+}
+@media screen and (max-width: 767px) {
+  header .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 17px;
+  }
+  header .header__burger span {
+    position: absolute;
+    left: 0;
+    top: 7px;
+    background-color: #39515E;
+    width: 100%;
+    height: 3px;
+    border-radius: 1px;
+  }
+  header .header__burger:before, header .header__burger:after {
+    content: "";
+    background-color: #39515E;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 1px;
+    left: 0;
+  }
+  header .header__burger:before {
+    top: 0;
+  }
+  header .header__burger:after {
+    width: 21.22px;
+    bottom: 0;
+  }
+  header .cross__block {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 31.74px;
+    margin-bottom: 53.74px;
+  }
+  header .cross__block .header__cross {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 17px;
+  }
+  header .cross__block .header__cross:before, header .cross__block .header__cross:after {
+    content: "";
+    background-color: #39515E;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 1px;
+    left: 0;
+  }
+  header .cross__block .header__cross:before {
+    transform: rotate(-45deg);
+    top: 14px;
+  }
+  header .cross__block .header__cross:after {
+    transform: rotate(45deg);
+    bottom: 0;
+  }
+  header .header-line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #C4C4C4;
+    margin-bottom: 35px;
+  }
+  header .header__menu-dark {
+    max-width: 414px;
+    min-height: 300px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease 0s;
+  }
+  header .header__menu-dark .header__menu {
+    max-width: 414px;
+    min-height: 300px;
+    transform-origin: left center;
+    transform: translateX(-45%);
+    transition: all 0.5s ease 0s;
+  }
+  header .header__menu-dark .header__menu .header__list {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 414px;
+    width: auto;
+    min-height: 300px;
+    margin-bottom: 62px;
+  }
+  header .header__menu-dark .header__menu .header__list li .header__menu-link {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 60px;
+  }
+  header .header__menu-dark .header__menu .header__button-second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 220px;
+    width: 100%;
+    height: 70px;
+    border: 2px solid #263238;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    transition: all 0.3s ease 0s;
+  }
+  header .header__menu-dark .header__menu .header__button-second:hover {
+    background-color: #263238;
+    color: #fff;
+  }
+  header .header__menu-dark .header__menu.active {
+    transform: translateX(0%);
+  }
+  header .header__menu-dark.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  header .header__menu-dark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 767px;
+    height: 100vh;
+    background-color: rgba(7, 34, 47, 0.7);
+    z-index: 9;
+  }
+  header .header__menu-dark .header__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    max-width: 429px;
+    z-index: 10;
+    padding: 0 26px;
+  }
+  header .header__button {
+    display: none;
+  }
+
+  .about {
+    min-height: 445px;
+  }
+  .about .container-fourth {
+    min-height: 445px;
+  }
+  .about .about__information {
+    max-width: 323px;
+    min-height: 337px;
+  }
+  .about .about__information .about__title {
+    font-size: 30px;
+    margin-bottom: -1px;
+  }
+  .about .about__information .about__subtitle {
+    max-width: 320px;
+    min-height: 162px;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 7px;
+  }
+  .about .about__information .about__counter {
+    max-width: 316px;
+    min-height: 58px;
+  }
+  .about .about__information .about__counter .counter-first {
+    max-width: 43px;
+    min-height: 58px;
+  }
+  .about .about__information .about__counter .counter-second {
+    max-width: 60px;
+    min-height: 58px;
+  }
+  .about .about__information .about__counter .counter-third {
+    max-width: 125px;
+    min-height: 58px;
+  }
+  .about .about__information .about__counter .counter-count {
+    font-size: 22px;
+  }
+  .about .about__information .about__counter .counter-subcount {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .about .about__img {
+    max-width: 295px;
+    min-height: 295px;
+  }
+  .about .about__title {
+    font-size: 48px;
+    line-height: 80px;
+  }
+
+  .pricing {
+    min-height: 600px;
+  }
+  .pricing .container-fifth {
+    min-height: 600px;
+  }
+  .pricing .pricing__title {
+    font-size: 30px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-img.first {
+    max-width: 197px;
+    min-height: 197px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-img.second {
+    max-width: 219px;
+    min-height: 168px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-img.third {
+    max-width: 210px;
+    min-height: 210px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-title.first {
+    max-width: 174px;
+    width: 100%;
+    min-height: 56px;
+    height: 100%;
+    margin-top: 23px;
+    margin-bottom: 15px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-title.second {
+    max-width: 112px;
+    width: 100%;
+    min-height: 56px;
+    height: 100%;
+    margin-top: 23px;
+    margin-bottom: 14px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-title.third {
+    max-width: 94px;
+    width: 100%;
+    min-height: 56px;
+    height: 100%;
+    margin-top: 15px;
+    margin-bottom: 9px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-subtitle {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-subtitle.first {
+    max-width: 196px;
+    min-height: 84px;
+    margin-bottom: 23px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-subtitle.second {
+    max-width: 211px;
+    min-height: 63px;
+    margin-bottom: 44px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-subtitle.third {
+    max-width: 224px;
+    min-height: 63px;
+    margin-bottom: 49px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-price {
+    max-width: 205px;
+    min-height: 45px;
+    padding-left: 12px;
+    padding-right: 23px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-price .tarifs-numbers {
+    font-size: 22px;
+    line-height: 33px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-price .tarifs-month {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .contact {
+    min-height: 550px;
+  }
+  .contact .container-sixth {
+    min-height: 550px;
+  }
+  .contact .contact__img {
+    max-width: 233px;
+    min-height: 210px;
+  }
+  .contact .contact__main {
+    max-width: 434px;
+    min-height: 210px;
+  }
+  .contact .contact__main .main-title {
+    font-size: 30px;
+    margin-left: 0px;
+    margin-bottom: -9px;
+  }
+  .contact .contact__main .main-subtitle {
+    max-width: 386px;
+    min-height: 63px;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 25px;
+  }
+  .contact .contact__main .form {
+    max-width: 434px;
+    min-height: 51px;
+  }
+  .contact .contact__main .form .main-input {
+    max-width: 283px;
+    min-height: 50px;
+    padding-left: 24px;
+    font-size: 12px;
+    line-height: 18px;
+    margin-right: 6px;
+  }
+  .contact .contact__main .form .main-button {
+    max-width: 145px;
+    min-height: 50px;
+    font-size: 13px;
+    line-height: 19.5px;
+  }
+
+  ::placeholder {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .footer {
+    min-height: 78px;
+  }
+  .footer .container-seventh {
+    min-height: 78px;
+  }
+  .footer .footer__logo {
+    width: 89px;
+    height: 45px;
+    margin-top: 18px;
+  }
+  .footer .footer__links {
+    max-width: 309px;
+    min-height: 20px;
+    font-size: 13px;
+    line-height: 19.5px;
+    margin-top: 31px;
+  }
+}
+@media screen and (max-width: 753px) {
+  .skills {
+    min-height: 832px;
+  }
+  .skills .container-third {
+    min-height: 832px;
+  }
+  .skills .skills__title {
+    font-size: 30px;
+    line-height: 80px;
+  }
+  .skills .skills__skills {
+    grid-template-rows: 441px 210px;
+    grid-gap: 13px;
+    min-height: 696px;
+  }
+  .skills .skills__skills .speakinng-img {
+    width: 214px;
+    height: 214px;
+  }
+  .skills .skills__skills .writing-img {
+    width: 200px;
+    height: 200px;
+    margin-top: 0px;
+  }
+  .skills .skills__skills .reading-img {
+    width: 216px;
+    height: 144px;
+  }
+  .skills .skills__skills .listening-img {
+    width: 202px;
+    height: 134px;
+  }
+  .skills .skills__skills .skills__speaking {
+    padding-top: 0px;
+    padding-bottom: 52px;
+  }
+  .skills .skills__skills .skills__writing {
+    align-items: flex-start;
+    padding-bottom: 30px;
+  }
+  .skills .skills__skills .skills__reading {
+    align-items: center;
+    padding-bottom: 32px;
+  }
+  .skills .skills__skills .skills__listening {
+    align-items: flex-end;
+    padding-bottom: 34px;
+    padding-top: 0px;
+    padding-left: 10px;
+  }
+  .skills .skills__skills .speaking-block {
+    max-width: 197px;
+    min-height: 347px;
+  }
+  .skills .skills__skills .writing-block {
+    max-width: 187px;
+    min-height: 203px;
+  }
+  .skills .skills__skills .reading-block {
+    max-width: 181px;
+    min-height: 206px;
+  }
+  .skills .skills__skills .listening-block {
+    max-width: 249px;
+    min-width: 156px;
+  }
+  .skills .skills__skills .block__title {
+    font-size: 20px;
+  }
+  .skills .skills__skills .block__title.second {
+    margin-top: -35px;
+  }
+  .skills .skills__skills .block__title.fourth {
+    margin-top: -10px;
+  }
+  .skills .skills__skills .block__subtitle {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .skills .skills__skills .block__subtitle.first {
+    max-width: 197px;
+    min-height: 237px;
+  }
+  .skills .skills__skills .block__subtitle.second {
+    max-width: 184px;
+    min-height: 97px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+  }
+  .skills .skills__skills .block__subtitle.third {
+    max-width: 181px;
+    min-height: 97px;
+    margin-top: -30px;
+  }
+  .skills .skills__skills .block__subtitle.fourth {
+    max-width: 250px;
+    height: 69px;
+    margin-top: -15px;
+    margin-bottom: 18px;
+  }
+  .skills .skills__skills .block__button {
+    width: 178px;
+    min-height: 50px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .skills .skills__skills .block__button.first {
+    width: 178px;
+    min-height: 50px;
+  }
+
+  .contact {
+    min-height: 700px;
+  }
+  .contact .container-sixth {
+    flex-direction: column;
+    min-height: 650px;
+  }
+  .contact .contact__img {
+    max-width: 358px;
+    min-height: 322px;
+  }
+  .contact .contact__title {
+    display: block;
+  }
+  .contact .contact__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 512px;
+    min-height: 192px;
+  }
+  .contact .contact__main .main-title {
+    display: none;
+    font-size: 30px;
+    margin-left: 0px;
+    margin-bottom: -9px;
+  }
+  .contact .contact__main .main-subtitle {
+    max-width: 472px;
+    min-height: 72px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .contact .contact__main .form {
+    max-width: 512px;
+    min-height: 60px;
+  }
+  .contact .contact__main .form .main-input {
+    max-width: 511px;
+    min-height: 60px;
+    padding-left: 25px;
+    font-size: 13px;
+    line-height: 19.5px;
+    margin-right: -193px;
+  }
+  .contact .contact__main .form .main-button {
+    max-width: 193px;
+    min-height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  ::placeholder {
+    font-size: 13px;
+    line-height: 19.5px;
+  }
+}
+@media screen and (max-width: 667px) {
+  .home .container-second {
+    flex-direction: column-reverse;
+  }
+  .home .home__article {
+    align-items: center;
+    max-width: 491px;
+    min-height: 231px;
+  }
+  .home .home__article .home__titleimage {
+    display: flex;
+  }
+  .home .home__article .home__titleimage .home__title {
+    max-width: 491px;
+    width: 100%;
+    min-height: 45px;
+    height: 100%;
+    font-size: 34px;
+    line-height: 45px;
+    text-align: center;
+  }
+  .home .home__article .home__titleimage .home__imagesecond {
+    display: none;
+    margin-left: 0;
+  }
+  .home .home__article .home__subtitle {
+    max-width: 490px;
+    min-height: 48px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .home .home__article .home__botton {
+    max-width: 305px;
+    width: 100%;
+    min-height: 75px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .home .home__imagefirst {
+    width: 424px;
+    height: 424px;
+  }
+
+  .skills {
+    min-height: 1250px;
+  }
+  .skills .container-third {
+    min-height: 1250px;
+  }
+  .skills .skills__title {
+    font-size: 30px;
+    line-height: 80px;
+  }
+  .skills .skills__skills {
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 534px 534px;
+    grid-gap: 32px;
+    min-height: 696px;
+    max-width: 510px;
+  }
+  .skills .skills__skills .speakinng-img {
+    width: 185px;
+    height: 185px;
+  }
+  .skills .skills__skills .writing-img {
+    width: 182px;
+    height: 182px;
+    margin-top: 0px;
+  }
+  .skills .skills__skills .reading-img {
+    width: 198px;
+    height: 123px;
+  }
+  .skills .skills__skills .listening-img {
+    width: 206px;
+    height: 137px;
+  }
+  .skills .skills__skills .skills__speaking {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .skills .skills__skills .skills__writing {
+    align-items: flex-start;
+    padding-bottom: 0px;
+  }
+  .skills .skills__skills .skills__reading {
+    padding-bottom: 0px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .skills .skills__skills .skills__listening {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .skills .skills__skills .speaking-block {
+    margin-top: -25px;
+    margin-bottom: 40px;
+  }
+  .skills .skills__skills .writing-block {
+    margin-bottom: 36px;
+  }
+  .skills .skills__skills .reading-block {
+    padding-bottom: 36px;
+  }
+  .skills .skills__skills .listening-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 36px;
+    margin-left: 50px;
+  }
+  .skills .skills__skills .block__title {
+    font-size: 18px;
+  }
+  .skills .skills__skills .block__title.first {
+    margin-top: -10px;
+  }
+  .skills .skills__skills .block__title.second {
+    margin-top: 0px;
+  }
+  .skills .skills__skills .block__title.fourth {
+    margin-top: 0px;
+  }
+  .skills .skills__skills .block__subtitle {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .skills .skills__skills .block__subtitle.first {
+    max-width: 187px;
+    min-height: 198px;
+  }
+  .skills .skills__skills .block__subtitle.second {
+    max-width: 172px;
+    min-height: 85px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .skills .skills__skills .block__subtitle.third {
+    max-width: 181px;
+    min-height: 98px;
+    margin-top: -170px;
+  }
+  .skills .skills__skills .block__subtitle.fourth {
+    max-width: 197px;
+    height: 78px;
+    margin-top: -200px;
+    margin-bottom: 0px;
+  }
+  .skills .skills__skills .block__button {
+    width: 200px;
+    min-height: 50px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .skills .skills__skills .block__button.first {
+    width: 200px;
+    min-height: 50px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (max-width: 575px) {
+  header .header__menu-dark .header__menu .header__button-second {
+    max-width: 330px;
+    width: 100%;
+  }
+  header .header__menu-dark .header__menu {
+    max-width: 575px;
+  }
+
+  .about {
+    min-height: 728px;
+  }
+  .about .container-fourth {
+    flex-direction: column-reverse;
+    min-height: 728px;
+  }
+  .about .about__information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 510px;
+    min-height: 220px;
+  }
+  .about .about__information .about__title {
+    display: none;
+    font-size: 30px;
+    margin-bottom: -1px;
+  }
+  .about .about__information .about__subtitle {
+    max-width: 510px;
+    min-height: 109px;
+    margin-bottom: 13px;
+    text-align: center;
+  }
+  .about .about__information .about__counter {
+    max-width: 421px;
+    min-height: 74px;
+  }
+  .about .about__information .about__counter .counter-first {
+    max-width: 47px;
+    min-height: 74px;
+  }
+  .about .about__information .about__counter .counter-second {
+    max-width: 64px;
+    min-height: 74px;
+    margin-left: 103px;
+  }
+  .about .about__information .about__counter .counter-third {
+    max-width: 131px;
+    min-height: 74px;
+    margin-left: 73px;
+  }
+  .about .about__information .about__counter .counter-count {
+    font-size: 24px;
+  }
+  .about .about__information .about__counter .counter-subcount {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .about .about__img {
+    max-width: 352px;
+    min-height: 352px;
+  }
+  .about .about__title {
+    font-size: 30px;
+    line-height: 80px;
+  }
+  .about .about__title.second {
+    display: block;
+  }
+
+  .pricing {
+    margin-top: 50px;
+    min-height: 1700px;
+  }
+  .pricing .container-fifth {
+    min-height: 1700px;
+  }
+  .pricing .pricing__title {
+    font-size: 30px;
+  }
+  .pricing .pricing__tarifs {
+    flex-direction: column;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir {
+    margin-bottom: 71px;
+    align-items: center;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-img.first {
+    max-width: 291px;
+    min-height: 291px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-img.second {
+    max-width: 314px;
+    min-height: 241px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-img.third {
+    max-width: 253px;
+    min-height: 253px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-title {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-title.first {
+    max-width: 300px;
+    min-height: 28px;
+    margin-top: 29px;
+    margin-bottom: 23px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-title.second {
+    max-width: 227px;
+    min-height: 28px;
+    margin-top: 21px;
+    margin-bottom: 19px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-title.third {
+    max-width: 198px;
+    min-height: 28px;
+    margin-top: 15px;
+    margin-bottom: 21px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-subtitle {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-subtitle.first {
+    max-width: 395px;
+    min-height: 42px;
+    margin-bottom: 31px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-subtitle.second {
+    max-width: 325px;
+    min-height: 42px;
+    margin-bottom: 31px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-subtitle.third {
+    max-width: 355px;
+    min-height: 42px;
+    margin-bottom: 31px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-price {
+    max-width: 205px;
+    min-height: 45px;
+    padding-left: 12px;
+    padding-right: 23px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-price .tarifs-numbers {
+    font-size: 22px;
+    line-height: 33px;
+  }
+  .pricing .pricing__tarifs .tarifs-tafir .tarifs-price .tarifs-month {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .footer {
+    min-height: 95px;
+  }
+  .footer .container-seventh {
+    min-height: 95px;
+  }
+  .footer .footer__logo {
+    width: 89px;
+    height: 45px;
+    margin-top: 24px;
+  }
+  .footer .footer__links {
+    font-weight: 500;
+    max-width: 286px;
+    min-height: 18px;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 38px;
+  }
+}
+@media screen and (max-width: 553px) {
+  .skills {
+    min-height: 2300px;
+  }
+  .skills .container-third {
+    min-height: 2300px;
+  }
+  .skills .skills__title {
+    font-size: 30px;
+    line-height: 80px;
+  }
+  .skills .skills__skills {
+    justify-content: center;
+    grid-template-columns: 290px;
+    grid-template-rows: 600px 473px 473px 473px;
+    grid-gap: 32px;
+    min-height: 696px;
+    max-width: 510px;
+  }
+  .skills .skills__skills .speakinng-img {
+    width: 231px;
+    height: 231px;
+  }
+  .skills .skills__skills .writing-img {
+    width: 204px;
+    height: 204px;
+    margin-top: 0px;
+  }
+  .skills .skills__skills .reading-img {
+    width: 236px;
+    height: 157px;
+  }
+  .skills .skills__skills .listening-img {
+    width: 232px;
+    height: 154px;
+  }
+  .skills .skills__skills .skills__speaking {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .skills .skills__skills .skills__writing {
+    align-items: center;
+    padding-bottom: 0px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .skills .skills__skills .skills__reading {
+    padding-bottom: 0px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .skills .skills__skills .skills__listening {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 54px;
+    padding-top: 0px;
+    padding-left: 0px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  .skills .skills__skills .speaking-block {
+    margin-top: -25px;
+    margin-bottom: 40px;
+  }
+  .skills .skills__skills .writing-block {
+    margin-bottom: 36px;
+  }
+  .skills .skills__skills .reading-block {
+    padding-bottom: 0px;
+    max-width: 210px;
+    min-height: 191px;
+    margin-bottom: 57px;
+  }
+  .skills .skills__skills .listening-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-bottom: -10px;
+  }
+  .skills .skills__skills .block__title {
+    font-size: 18px;
+  }
+  .skills .skills__skills .block__title.first {
+    margin-top: -10px;
+  }
+  .skills .skills__skills .block__title.second {
+    margin-top: 0px;
+  }
+  .skills .skills__skills .block__title.fourth {
+    margin-top: 0px;
+  }
+  .skills .skills__skills .block__subtitle {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .skills .skills__skills .block__subtitle.first {
+    max-width: 187px;
+    min-height: 198px;
+  }
+  .skills .skills__skills .block__subtitle.second {
+    max-width: 172px;
+    min-height: 85px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .skills .skills__skills .block__subtitle.third {
+    max-width: 181px;
+    min-height: 98px;
+    margin-top: 0px;
+  }
+  .skills .skills__skills .block__subtitle.fourth {
+    max-width: 197px;
+    height: 78px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .skills .skills__skills .block__button {
+    width: 200px;
+    min-height: 50px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .skills .skills__skills .block__button.first {
+    width: 200px;
+    min-height: 50px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (max-width: 435px) {
+  .home {
+    min-height: 550px;
+  }
+  .home .container-second {
+    min-height: 550px;
+  }
+  .home .home__article {
+    max-width: 491px;
+    min-height: 231px;
+  }
+  .home .home__article .home__titleimage .home__title {
+    max-width: 220px;
+    min-height: 72px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .home .home__article .home__subtitle {
+    max-width: 300px;
+    min-height: 63px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .home .home__article .home__botton {
+    max-width: 289px;
+    width: 100%;
+    min-height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .home .home__imagefirst {
+    width: 299px;
+    height: 299px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .about {
+    min-height: 970px;
+  }
+  .about .container-fourth {
+    flex-direction: column-reverse;
+    min-height: 970px;
+  }
+  .about .about__information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 510px;
+    min-height: 220px;
+  }
+  .about .about__information .about__title {
+    display: none;
+    font-size: 30px;
+    margin-bottom: -1px;
+  }
+  .about .about__information .about__subtitle {
+    max-width: 300px;
+    min-height: 157px;
+    margin-bottom: 13px;
+    text-align: center;
+  }
+  .about .about__information .about__counter {
+    flex-direction: column;
+    max-width: 125px;
+    min-height: 268px;
+  }
+  .about .about__information .about__counter .counter-first {
+    max-width: 125px;
+    min-height: 56px;
+  }
+  .about .about__information .about__counter .counter-second {
+    max-width: 125px;
+    min-height: 51px;
+    margin-left: 0px;
+  }
+  .about .about__information .about__counter .counter-third {
+    max-width: 125px;
+    min-height: 51px;
+    margin-left: 0px;
+  }
+  .about .about__information .about__counter .counter-count {
+    font-size: 24px;
+  }
+  .about .about__information .about__counter .counter-subcount {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .about .about__img {
+    max-width: 283px;
+    min-height: 283px;
+  }
+  .about .about__title {
+    font-size: 24px;
+  }
+
+  .contact {
+    min-height: 600px;
+  }
+  .contact .container-sixth {
+    flex-direction: column;
+    min-height: 600px;
+  }
+  .contact .contact__img {
+    max-width: 253px;
+    min-height: 228px;
+  }
+  .contact .contact__title {
+    display: block;
+    font-size: 24px;
+  }
+  .contact .contact__main {
+    max-width: 291px;
+    min-height: 242px;
+  }
+  .contact .contact__main .main-subtitle {
+    max-width: 292px;
+    min-height: 84px;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 31px;
+  }
+  .contact .contact__main .form {
+    flex-direction: column;
+    align-items: center;
+    max-width: 291px;
+    min-height: 127px;
+  }
+  .contact .contact__main .form .main-input {
+    max-width: 511px;
+    min-height: 60px;
+    padding-left: 26px;
+    font-size: 12px;
+    line-height: 18px;
+    margin-right: 0px;
+    margin-bottom: 17px;
+  }
+  .contact .contact__main .form .main-button {
+    max-width: 290px;
+    min-height: 60px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  ::placeholder {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .footer {
+    margin-top: 57px;
+    min-height: 140px;
+  }
+  .footer .container-seventh {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 140px;
+  }
+  .footer .footer__logo {
+    width: 71px;
+    height: 36px;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 26px;
+  }
+  .footer .footer__links {
+    font-weight: 500;
+    max-width: 262px;
+    min-height: 17px;
+    font-size: 11px;
+    line-height: 16px;
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  header .header__menu-dark .header__menu .header__button-second {
+    max-width: 291px;
+    width: 100%;
+    min-height: 65px;
+  }
+}
